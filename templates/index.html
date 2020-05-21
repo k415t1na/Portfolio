@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kristina Myftaraga Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+<!-- Update these with your own fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+   <link rel="stylesheet" href="../static/style.css">
+       
+   
+    </head>
+    <div class="topnav" id="myTopnav">
+        <a href="{{ url_for('home') }}#work">Portfolio</a>
+        <a href="{{ url_for('home') }}#services">Services</a>
+        <a href="{{ url_for('home') }}#about">About</a>
+        <a href="{{ url_for('home') }}" class="active">Home</a>
+
+         
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            
+          <i class="fa fa-bars"></i>
+ 
+        </a>
+      </div>
+      <a href="https://www.instagram.com/xyas.art/"><img src="/static/img/logo.png" class="logo"></a>
+    <body>
+        
+        
+<!----------Intro----------------->
+
+        <section class="intro" id= "home">
+            <h1 class="section__title section__title--intro">Hi, I am <strong> Kristina!</strong></h1>
+                <p class="section__subtitle section__subtitle--intro">Graphic Designer</p>
+                <img src="/static/img/kris2.jpg" alt= "a picture of Kristina drawing" class="intro__img">
+                
+        </section>
+
+<!---------My Services------->
+        <section class="my-services" id="services">
+                <h2 class="section__title section__title--services">What I do</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Logo design</h3>
+                    </div><!--------/service-------->
+
+                    <div class="service">
+                        <h3>Illustration</h3>
+                        <p> 
+                            <li>Pencil</li>
+                            <li>Watercolor</li>
+                            <li>Pen and Ink</li>
+                            <li>Vector Graphics</li>
+                            <li>Freehand digital</li>
+                        </p>
+                    </div><!--------/service-------->
+
+
+                    <div class="service">
+                        <h3>Ecommerce banner</h3>
+                        <p>
+                            <li>Newsletter design</li>
+                            <li>Callout boxes</li>
+                           </p>
+                    </div><!--------/service-------->
+
+
+                    <div class="service">
+                        <h3>Collateral</h3>
+                        <p>
+                            <li>Flyer & Poster Design</li>
+                            <li>Booklet</li>
+                            <li>Pamphlet</li>
+                            <li>Posters</li>
+                            <li>Corporate Brochure Design</li>
+                        </p>
+                    </div><!--------/service-------->
+
+
+                    <div class="service">
+                        <h3>Gift accessories design </h3>
+                        <p>
+                            <li>Greeting cards</li>
+                            <li>Invitation card</li>
+                            <li>Business Leaflets and cards</li>
+                        </p>
+                    </div><!--------/service-------->
+                </div><!--------/services-------->
+
+                <a href="#work" class="btn">My portfolio</a>
+        </section>
+<!----------About Me---------->
+    
+<section class="about-me" id="about">
+        <h2 class="section__title section__title--about"> Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Passionated artist</p>
+            <div class="about-me__body">
+                <p>
+                    I am a student at American Univeristy in Bulgaria, double majoring in <strong>Business Administration and Computer Science</strong>, with a great passion in digital art.
+                    <p>I have been drawing since I was a kid, and gradually I developed the skills I need to promote my art and build the confidence to share it with <strong>YOU.</strong> </p>
+                    <p>My audience is my biggest critic, so I am asking for your opinion on my artworks! Feel free to express your <strong>thoughts,</strong> they are much appreciated :) </p>
+                </div> 
+
+            <img src="/static/img/kris3.jpg" alt="Kristina going home"class="about-me__img">
+    </section>
+   
+<!------------Portfolio------------->
+ <!-- My Work -->
+ <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">Portfolio</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+    
+    <div class="portfolio">
+      
+        <!-- Portfolio item 01 -->
+        <a href="{{ url_for('caricatures') }}" class="portfolio__item">
+            <img src="/static/img/caricatures.png" alt="" class="portfolio__img">
+        </a>
+        
+        <!-- Portfolio item 02 -->
+        <a href="{{ url_for('portraits') }}" class="portfolio__item">
+            <img src="/static/img/portraits.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="{{ url_for('posters') }}" class="portfolio__item">
+            <img src="/static/img/posters.png" alt="" class="portfolio__img">
+        </a>
+        
+         <!-- Portfolio item 04 -->
+         <a href="{{ url_for('tshirt') }}" class="portfolio__item">
+            <img src="/static/img/tshirt.png" alt="" class="portfolio__img">
+        </a>
+
+         <!-- Portfolio item 05 -->
+         <a href="{{ url_for('logos') }}" class="portfolio__item">
+            <img src="/static/img/logos.png" alt="" class="portfolio__img">
+        </a>
+    </div>
+</section>
+
+<!-------------------Footer ------------------------>
+<footer class="footer">
+<footer>
+    <a href= "mailto:kristina.myftaraga@yahoo.com" class="footer__link">kristina.myftaraga@yahoo.com</a>
+    <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/profile.php?id=100009238589388"> 
+            <i class="fab fa-facebook-f"></i>
+            </a></li>
+       
+        <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/xyas.art/">
+            <i class="fab fa-instagram"></i>
+            </a></li>
+        
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/kristina-m-041992108/m">
+            <i class="fab fa-linkedin-in"></i>
+            </a></li>
+       
+
+    </ul>
+        </footer>
+
+        <script src="../js/index.js"></script>
+
+</body>
+</html>
